@@ -1,7 +1,7 @@
 import asyncio
 import os
 import discord
-from secret import dico_token
+from setting import dico_token
 from discord.ext import commands
 
 intents = discord.Intents.default()

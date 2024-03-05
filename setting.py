@@ -14,3 +14,7 @@ def dico_token():
 
 def randomapi_token():
     return os.getenv('random_api_token')
+
+
+def embed_color():
+    return 0x006400
