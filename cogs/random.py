@@ -4,6 +4,8 @@ from setting import randomapi_token
 from discord.ext import commands
 
 
+
+
 class Random(commands.Cog):
     def __init__(self, bot):
         self.bot = bot

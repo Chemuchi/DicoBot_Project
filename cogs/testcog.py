@@ -41,6 +41,11 @@ class TestCog(commands.Cog):
         embed.set_footer(text='바닥글 내용')
         await ctx.reply(embed=embed)
 
+    @commands.hybrid_command(name='강제종료')
+    async def force_off(self, ctx):
+        await self.bot.close()
+
+
 
 async def setup(bot):
     await bot.add_cog(TestCog(bot))
