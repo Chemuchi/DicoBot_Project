@@ -18,6 +18,11 @@ async def load_cogs():
             await bot.load_extension(f'cogs.{filename[:-3]}')
 
 
+@bot.command(name='reload', description='cogs 리로드')
+async def reload_cogs(ctx):
+    await load_cogs()
+    ctx.reply(':check_mark: 코드 리로딩 완료')
+
 @bot.event
 async def on_ready():
     await bot.tree.sync()
@@ -33,5 +38,9 @@ async def start():
         await bot.start(token)
 
 
+<<<<<<< HEAD
 
 asyncio.run(start())
+=======
+asyncio.run(start())
+>>>>>>> JaeHyeong
