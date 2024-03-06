@@ -38,9 +38,4 @@ async def start():
         await bot.start(token)
 
 
-<<<<<<< HEAD
-
 asyncio.run(start())
-=======
-asyncio.run(start())
->>>>>>> JaeHyeong
