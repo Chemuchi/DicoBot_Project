@@ -31,6 +31,7 @@ async def on_ready():
     print('봇 실행 완료')
 
 
+
 async def start():
     async with bot:
         await load_cogs()
