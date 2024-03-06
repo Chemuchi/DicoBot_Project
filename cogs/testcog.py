@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 
+from ui.test_button import TestButtonFunction
 from setting import embed_color
 
 
@@ -42,5 +43,8 @@ class TestCog(commands.Cog):
         await ctx.reply(embed=embed)
 
 
+    @commands.hybrid_command(name='버튼테스트',description='버튼을 테스트')
+    async def button_test(self, ctx):
+        await ctx.send('버튼을 눌러보세요.', view=TestButtonFunction())
 async def setup(bot):
     await bot.add_cog(TestCog(bot))
