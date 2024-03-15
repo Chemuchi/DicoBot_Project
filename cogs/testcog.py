@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from ui.test_button import TestButtonFunction
+from ui.buttons.test_button import TestButtonFunction
 from setting import embed_color
 
 

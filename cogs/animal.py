@@ -1,6 +1,5 @@
-import discord
 from discord.ext import commands
-from ui.animal_button import AnimalButtonFunction
+from ui.buttons.animal_button import AnimalButtonFunction
 
 
 class AnimalCog(commands.Cog):

@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-from ui.fun_button import FunButtonFunction
+from ui.buttons.fun_button import FunButtons
 
 
 class FunCog(commands.Cog):
@@ -16,7 +16,8 @@ class FunCog(commands.Cog):
     async def button_test(self, ctx):
         embed = discord.Embed(title='❓', description='골라 골라 골라')
         embed.set_image(url='https://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif')
-        await ctx.reply(embed=embed, view=FunButtonFunction())
+        view = FunButtons()
+        await ctx.reply(embed=embed, view=view)
 
 
 async def setup(bot):
